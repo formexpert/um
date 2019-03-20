@@ -1,0 +1,103 @@
+/* ed. 9.12.2016 */
+
+
+.softhide {display: none;}
+.softhide .text-danger {
+	color: #880000; 
+	font-style: italic; 
+	font-weight: bold;
+}
+.ramka {
+	padding: 12px 18px;
+	border: 2px solid #ccc;
+	background: url(/assets/img/bg-l-white.gif) repeat;
+	margin-bottom: 20px;
+}
+.ramka h3 {
+	margin-top: 0px; 
+	font-size: 20px; 
+	font-weight: bold; 
+	line-height: 1.5;
+	margin-bottom: 5px;
+}
+.ui-left-icon p,.ui-left-icon h1,.ui-left-icon h3,.ui-left-icon h2,.ui-left-icon h4 {
+	padding-left: 55px;
+}
+.ui-left-icon .fa, .ui-left-icon .glyphicon {
+	float: left;
+	font-size: 35px;
+	padding-left: 2px;
+	padding-top: 8px;
+}
+.ramka-red {
+	border: 2px solid #ec9999;
+}
+.ramka-red .fa, .ramka-red .glyphicon {
+	color: #989898;
+}
+.ramka-teal {
+	border: 2px solid #4e5e66;
+	background: url(/assets/img/bg-l-teal.gif) repeat;
+}
+.ramka-teal h1,.ramka-teal h2,.ramka-teal h3,.ramka-teal h4 {
+	color: #e1effa;
+}
+.ramka-teal p {color: #fff;}
+.ramka-teal .fa, .ramka-teal .glyphicon {
+	color: #94bbc1;
+}
+figure {
+	background: #f6f6f6;
+	padding: 20px 20px 10px; 
+	float: right; 
+	margin: 0 0 10px 20px ; 
+	border: 1px solid #e7e7e7; 
+	text-align: center; 
+	border-radius:0px;
+}
+figure.float-left {
+	float: left; 
+	margin-right:20px; 
+	margin-left:0;
+}
+figure p {
+	padding: 0; 
+	margin: 0;
+}
+figure img {
+	margin:0; 
+	padding:0;
+	display:block;
+}
+figure a.gallery {
+	border:1px solid #f6f6f6;
+	display:block;
+	margin:0 0 6px 0; 
+	padding:0;
+}
+figure a.gallery:hover {border:1px solid #fff; }
+figcaption {
+	color: #426586;
+	font-size: 13px;
+	line-height: 1.3;
+	text-transform:uppercase;
+}
+.alert h4 {
+	font-size:20px;
+}
+ul.ui-spisok-bs1 {
+	padding:0; 
+	margin:0 0 20px 0;
+}
+ul.ui-spisok-bs1 li {
+	padding-left:30px;
+	color:#000;
+	font-size: 14px;
+	line-height: 1.1;
+	padding-bottom:14px;
+	list-style:none;
+	background:url(/assets/img/li.png) no-repeat left top;
+}
+ul.ui-spisok-bs2 { margin:0; padding:0;}
+ul.ui-spisok-bs2 li {font-style:italic; list-style:none; padding-left:40px; background: url(/assets/img/sl.png) no-repeat left 5px;}
+ul.ui-spisok-bs2 li span {display: block; text-transform: uppercase; font-size: 15px; font-weight:600; text-transform: uppercase; font-style:normal;}

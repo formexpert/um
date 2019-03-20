@@ -1,0 +1,701 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Автосервис</title>
+<base href="http://dm34.ru/" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="/assets/fonts/fonts.css">
+  <link rel="stylesheet" type="text/css" href="/assets/css/essentials.css">
+  <link rel="stylesheet" type="text/css" href="/assets/css/layout.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/ui.css">
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+ <script type="text/javascript" src="assets/js/jquery.fitvids.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.easing.1.3.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.bxslider.js"></script>
+	<script type="text/javascript" src="/assets/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+	<script type="text/javascript" src="/assets/fancybox/jquery.fancybox.js?v=2.1.5"></script>
+	<link rel="stylesheet" type="text/css" href="/assets/fancybox/jquery.fancybox.css?v=2.1.5" media="screen" />
+	<link rel="stylesheet" type="text/css" href="/assets/fancybox/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
+	<script type="text/javascript" src="/assets/fancybox/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+	<link rel="stylesheet" type="text/css" href="/assets/fancybox/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+	<script type="text/javascript" src="/assets/fancybox/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+	<script type="text/javascript" src="/assets/fancybox/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $("a.gallery").fancybox();
+    });
+$(document).ready(function(){
+          $('.bxslider').bxSlider({
+            mode: 'horizontal',           // тип перехода между слайдами может быть 'horizontal', 'vertical', 'fade'
+            captions: false,         // отображение title
+            easing: 'easeInOutQuad',// анимация слайда
+            controls: true,         // отображение стрелки - вперед, назад
+            startSlide: 0,          // Показ начнется с заданного слайда
+            infiniteLoop: true,     // показывать первый слайд за последним 
+            pager: true,            // показ номера страницы
+            auto: true,             // сделать автоматический переход
+            autoControls: false,     // показывает кнопку плей и стоп
+            video: true,            // включить видео
+            pause: 6000,            // время между сменой слайдов в м-сек
+            speed: 500,             // длительность перехода слайда в м-сек
+            useCSS: false           // CSS переходы
+          });
+          $('.slider1').bxSlider({
+            minSlides: 1,
+            maxSlides: 1,
+            auto: false
+          });
+          $('.slider2').bxSlider({
+            slideWidth: 200,
+            pause: 6000,            // время между сменой слайдов в м-сек
+            minSlides: 5,
+            maxSlides: 5,
+            controls: false,
+            pager: false, 
+            auto: true
+          });
+        });
+
+$(document).ready(function(){
+	$(".navblock").click(function(){
+    	window.location=$(this).find("a").attr("href");return false;
+	});
+});
+</script>
+</head>
+<body>
+<div class="topbg">
+<header>
+  <div class="container">
+    <div class="logo navblock"><img src="assets/img/logo.png" alt="Кузовной ремонт"><a href="/"></a></div>
+    <div class="losung navblock">
+      <div class="meta-title">Центр <span>кузовного ремонта</span></div>
+      <div class="meta-description">Профессиональный кузовной ремонт <br> любой сложности</div>
+      <a href="/"></a>
+    </div>
+    <div class="grafik"><span>Время работы:</span>
+    Ежедневно с 9-00 до 20-00 ч.</div>
+    <div class="rcol">
+      <div class="adress">г.Екатеринбург ул. Лукиных, 1Б/2</div>
+      <div class="mail"><a href="mailto:info@um-avto.ru">info@um-avto.ru</a></div>
+      <div class="phone">+7 (343) 206-98-88</div>
+      <div class="phone">+7 (992) 012-88-00</div>
+      <div class="meta-phone-desc">(Viber, WatsApp)</div>
+    </div>
+    <div class="callback"><a href="#" class="btn btn-fx" data-toggle="modal" data-target="#login-modal">Записаться в сервис</a></div>
+  </div>
+
+
+  <div class="promo-top-box">
+    <div class="meta-title">Ремонт и покраска<br>одной детали</div>
+    <div class="meta-desc">ОТ 1 ДНЯ</div>
+    <div class="meta-price"><span>от <span class="xl">2500</span> руб.</span></div>
+  </div>
+
+
+
+
+
+
+
+
+
+</header>
+
+</div><!-- /.topbg -->
+
+<nav class="navbar nav " role="navigation">
+  <div class="container nopadding">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <span class="visible-xs">МЕНЮ</span>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      
+    <ul class="mainnav">
+      <li class=" active">
+<a href="uslugi/kuzovnyie-rabotyi/" class="dropdown-toggle " data-toggle="dropdown">Кузовной ремонт</a>
+ </li>
+      <li class="dropdown">
+<a href="uslugi/pokraska-avtomobilya/" class="dropdown-toggle " data-toggle="dropdown">Покраска автомобиля</a>
+
+<ul class=""><li class="first"><a href="uslugi/kuzovnyie-rabotyi/">Кузовной ремонт</a></li><li><a href="uslugi/pokraska-avtomobilya/">Покраска автомобиля</a></li><li><a href="uslugi/polirovka-kuzova/">Полировка кузова</a></li><li><a href="uslugi/slesarnyie-rabotyi/">Слесарные работы</a></li><li class="last"><a href="uslugi/podbor-zapchastej/">Подбор запчастей</a></li></ul>
+ </li>
+      <li class="">
+  <a href="uslugi/polirovka-kuzova/" >Полировка кузова</a>
+ </li>
+       <li class="">
+  <a href="uslugi/slesarnyie-rabotyi/" >Слесарные работы</a>
+ </li>
+      <li class="">
+  <a href="uslugi/podbor-zapchastej/" >Подбор запчастей</a>
+ </li>
+      
+    </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+
+
+
+
+
+<section class="slider-big">
+  <div class="container">
+    <div class="row padding-top-30 padding-bottom-60">
+
+
+<div class="photolink-s col-xs-12 col-sm-6 col-lg-8">
+  <div class="relative">
+    <div class="photo-big" style="background-image: url(/assets/img/ps1.jpg);"></div>
+    <div class="dark-4 overlay"></div>
+    <div class="promo promo1">
+      <div class="label-price">от 500 <i class="fa fa-rub"></i></div>
+      <span class="meta-title block">Кузовной ремонт</span>
+      <span class="meta-description block">любой сложности, включая восстановление геометрии кузова и стапельные работы</span>
+<ul class="">
+    <li class="first"><a href="uslugi/kuzovnyie-rabotyi/vosstanovlenie-geometrii-kuzova.html" >Восстановление геометрии кузова <span class="block" style="text-decoration:none; font-style:italic;">(стапельные работы)</span></a></li>
+    <li><a href="uslugi/kuzovnyie-rabotyi/lokalnyij-kuzovnoj-remont.html" >Локальный кузовной ремонт</a></li>
+  <li class=" hidden-sm"><a href="uslugi/kuzovnyie-rabotyi/udalenie-czarapin.html" >Удаление царапин</a></li>
+  <li class=" hidden-sm"><a href="uslugi/kuzovnyie-rabotyi/remont-porogov.html" >Ремонт и замена порогов</a></li>
+  <li class=" hidden-sm hidden-xs hidden-md"><a href="uslugi/kuzovnyie-rabotyi/remont-bampera.html" >Ремонт бамперов</a></li>
+  <li class="last hidden-sm hidden-xs hidden-md"><a href="uslugi/kuzovnyie-rabotyi/zamena-stekla-avtomobilya.html" >Замена стекол</a></li></ul>
+      <a href="uslugi/kuzovnyie-rabotyi/" class="btn btn-primary btn-white">Подробнее</a>
+    </div>
+  </div>
+</div>
+
+<div class="photolink-s col-xs-12 col-sm-6 col-lg-4">
+  <div class="relative">
+    <div class="photo-right" style="background-image: url(/assets/img/ps2.jpg);"></div>
+    <div class="dark-4 overlay"></div>
+    <div class="promo promo2">
+      <div class="label-price">от 1500 <i class="fa fa-rub"></i></div>
+      <span class="meta-title block">Покраска автомобиля</span>
+<ul class="">
+    <li class="last"><a href="uslugi/pokraska-avtomobilya/lokalnaya-pokraska.html" >Локальная покраска</a></li>
+    <li><a href="uslugi/pokraska-avtomobilya/pokraska-detalej.html" >Покраска деталей</a></li>
+    <li><a href="uslugi/pokraska-avtomobilya/polnaya-pokraska-kuzova.html" >Полная покраска кузова</a></li>
+    <li class="first"><a href="uslugi/pokraska-avtomobilya/pokraska-diskov.html" >Покраска дисков</a></li>
+</ul>
+      <a href="uslugi/pokraska-avtomobilya/" class="btn btn-primary btn-white">Подробнее</a>
+    </div>
+  </div>
+</div>
+
+<div class="photolink-s col-xs-12 col-sm-6 col-lg-4">
+  <div class="relative">
+    <div class="photo-sm" style="background-image: url(/assets/img/ps3.jpg);"></div>
+    <div class="dark-4 overlay"></div>
+    <div class="promo promo2">
+      <div class="label-price">от 500 <i class="fa fa-rub"></i></div>
+      <span class="meta-title block">Полировка<br>
+кузова</span>
+
+      <a href="uslugi/polirovka-kuzova/" class="btn btn-primary btn-white">Подробнее</a>
+    </div>
+  </div>
+</div>
+
+<div class="photolink-s col-xs-12 col-sm-6 col-lg-4">
+  <div class="relative">
+    <div class="photo-sm" style="background-image: url(/assets/img/ps4.jpg);"></div>
+    <div class="dark-4 overlay"></div>
+    <div class="promo promo2">
+      <div class="label-price">от 100 <i class="fa fa-rub"></i></div>
+      <span class="meta-title block">Слесарные <br>
+работы</span>
+
+      <a href="uslugi/slesarnyie-rabotyi/" class="btn btn-primary btn-white">Подробнее</a>
+    </div>
+  </div>
+</div>
+
+<div class="photolink-s col-xs-12 col-sm-6 col-sm-offset-3 col-md-offset-0 col-lg-4">
+  <div class="relative">
+    <div class="photo-sm" style="background-image: url(/assets/img/ps5.jpg);"></div>
+    <div class="dark-4 overlay"></div>
+    <div class="promo promo2">
+      <div class="label-price"><span class="size-16">бесплатно</span></div>
+      <span class="meta-title block">Подбор<br>
+запчастей</span>
+
+      <a href="uslugi/podbor-zapchastej/" class="btn btn-primary btn-white">Подробнее</a>
+    </div>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+</section>
+
+<hr class="box-shadow-one">
+<style>
+
+
+.prbox {
+  position: relative;
+  height: 245px;
+  overflow: visible
+}
+.prbox .icon-otz {
+  float: left
+}
+.prbox .otz-title {
+  margin-left: 90px;
+  position: relative;
+  height: 85px;
+  text-align: left
+}
+.prbox .otz-title .addr {
+  font-style: normal;
+  font-weight: normal;
+  line-height: 17px;
+  font-size: 14px;
+  display: block;
+  opacity: .6;
+  padding-top: 5px
+}
+.prbox .panel-review {
+  border: 0;
+  border-radius: 0;
+  background: #fff;
+  position: relative
+}
+.prbox .otz-review {
+  text-align: left;
+  height: 100px;
+  overflow: hidden
+}
+.prbox .panel-review:hover .otz-review {
+  height: auto;
+  background: #fff
+}
+.prbox .panel-review:hover {
+  outline: 1px solid #f4f4f4;
+  z-index: 1000;
+  -webkit-box-shadow: 0 15px 15px rgba(0,0,0,.15);
+  box-shadow: 0 15px 15px rgba(0,0,0,.15)
+}
+div.divider {
+  margin: 40px 0;
+  position: relative;
+  display: block;
+  min-height: 20px
+}
+div.divider.divider-center.divider-short:before {
+  left: auto !important;
+  right: 50%;
+  margin-right: 40px;
+  width: 100px
+}
+div.divider.divider-center.divider-short:after {
+  left: 50% !important;
+  right: auto !important;
+  margin-left: 40px;
+  width: 100px
+}
+div.divider.divider-center:before {
+  left: 0 !important;
+  right: 50%;
+  margin-right: 40px;
+  content: "";
+  position: absolute;
+  top: 8px;
+  height: 0;
+  border-top: 2px solid #ddd
+}
+div.divider:after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  right: 0;
+  height: 0;
+  border-top: 1px solid #ddd
+}
+div.divider.divider-color:before, div.divider.divider-color:after {
+  border-top: #85368a 2px solid
+}
+div.divider {
+  margin-top: 0
+}
+.otz {margin-bottom: 0;}
+.otz h3 {
+  background: none;
+  margin-bottom: 0
+}
+.otz .divider .fa {
+  display: block;
+  margin-top: -7px
+}
+.otz.section-graybg {
+  background: #f4f4f4;
+  padding-top: 50px;
+  padding-bottom: 40px
+}
+</style>
+
+<section class="otz section-graybg shadow-after-3">
+  <div class="container text-center">
+    <h2 class="nomargin-bottom nopadding-bottom">Отзывы</h2>
+    <h3 class="nomargin-top">наших клиентов</h3>
+    <div class="divider divider-circle divider-color divider-center divider-short"><!-- divider --> 
+      <i class="fa"><img src="/stars.svg" alt=""></i> </div>
+    <div class="row">
+      <div class="col-sm-4 prbox">
+        <div class="panel panel-default panel-review">
+          <div class="panel-body">
+            <div class="icon-otz"> <span class="ico-status ico-status__online"></span> <img src="p1.jpg" alt="Андрей " class="img-circle" width="75" height="75"> </div>
+            <div class="otz-title">Андрей <span class="addr"><i class="fa fa-car"></i> Nissan Pathfinder</span> </div>
+            <div class="otz-review">
+              <p>Обратился в UM-AUTO чтобы устранить вмятины на заднем крыле. Дефект доставлял большие неудобства. Исправили за несколько часов. Пригнал автомобиль в обед, забрал уже вечером. Мастера проделали удивительную работу. Я полностью и всем доволен!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 prbox">
+        <div class="panel panel-default panel-review">
+          <div class="panel-body">
+            <div class="icon-otz"> <span class="ico-status ico-status__online"></span> <img src="p2.jpg" alt="Михаил " class="img-circle" width="75" height="75"> </div>
+            <div class="otz-title">Михаил <span class="addr"><i class="fa fa-car"></i> Ваз 2114</span> </div>
+            <div class="otz-review">
+              <p>Качество работы хорошее, я не пожалел что сюда обратился. Пообщался с сотрудниками по душам. Кузов подварили, убрали проблемы на арках и порогах. Я очень доволен вашей работой.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 prbox">
+        <div class="panel panel-default panel-review">
+          <div class="panel-body">
+            <div class="icon-otz"> <span class="ico-status ico-status__online"></span> <img src="p3.jpg" alt="Владимир" class="img-circle" width="75" height="75"> </div>
+            <div class="otz-title">Владимир  <span class="addr"><i class="fa fa-car"></i> Mitsubishi Lancer</span> </div>
+            <div class="otz-review">
+              <p>Возникли проблемы с КПП. Был у вас впервые, все очень понравилось, хорошее качество, сделали быстро, отношение к клиенту тоже не вызвало претензий. Вернусь в этот автосервис, обязательно.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="works">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="text-center text-uppercase">Примеры работ</h2>
+        <hr class="style-one">
+        <div class="slider">
+          <div class="container">
+            <ul class="bxslider">
+              <li>
+                <img src="/assets/img/work1.jpg" alt="">
+                <div class="bxpromo bxpromo1">
+                  <div class="meta-title">Toyota rav4</div>
+                  <div class="meta-desc">Передний бампер - ремонт, покраска - <span>3 500 руб.</span></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="callout2">
+  <div class="podlog">
+    <div class="container padding-top-50 padding-bottom-60">
+      <div class="well-form">
+        <h2 class="text-center text-uppercase">Рассчитать стоимость</h2>
+        <div class="row">
+          <div class="col-12 padding-60 padding-top-20">
+            <form action="php/contact.php" method="post" enctype="multipart/form-data">
+              <fieldset>
+                <input type="hidden" name="action" value="contact_send">
+                <div class="row">
+                  <div class="form-group">
+                    <div class="col-md-4">
+                      <input required="" type="text" value="" class="form-control" name="contact[name][required]" id="contact:name" placeholder="Ваше имя">
+                    </div>
+                    <div class="col-md-4">
+                      <input required="" type="email" value="" class="form-control" name="contact[email][required]" id="contact:email" placeholder="E-mail">
+                    </div>
+                    <div class="col-md-4">
+                      <input type="text" value="" class="form-control" name="contact[phone]" id="contact:phone" placeholder="Телефон">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-group">
+                    <div class="col-md-4">
+                      <input required="" type="text" value="" class="form-control" name="contact[subject][required]" id="contact:subject" placeholder="Примечание">
+                    </div>
+                    <div class="col-md-4">
+                      <select class="form-control pointer" name="contact[department]">
+                        <option value="">Характер повреждеий</option>
+                        <option value="Marketing">Marketing</option>
+                        <option value="Webdesign">Webdesign</option>
+                        <option value="Architecture">Architecture</option>
+                      </select>
+                    </div>
+                    <div class="col-md-4">
+                      <select class="form-control pointer" name="contact[department]">
+                        <option value="">Поврежденный элемент</option>
+                        <option value="Marketing">Marketing</option>
+                        <option value="Webdesign">Webdesign</option>
+                        <option value="Architecture">Architecture</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <button type="submit" class="btn btn-danger pull-left margin-right-20"><i class="fa fa-check"></i> Отправить</button>
+
+                    <div class="input-group width-500"><span class="input-group-addon"><i class="fa fa-paperclip"></i></span><input class="custom-file-upload custom-file-upload-hidden" type="file" id="file" name="contact[attachment]" data-btn-text="Select a File" tabindex="-1" style="position: absolute; left: -9999px;"><input type="text" class="form-control file-upload-input text-left"><span class="input-group-btn" tabindex="-1"><button type="button" class="file-upload-button btn btn-hvr ">Прикрепить фото</button></span></div>
+                  </div>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="proteam">
+  <div class="container text-center padding-top-30">
+    <img src="assets/img/logosm.png" alt="">
+    <h2 class="text-uppercase">Команда профессионалов</h2>
+    <p>Производим все виды кузовных и слесарных работ любой сложности. Ремонт бамперов.<br>
+    Осуществляем компьютерное диагностирование, полировку кузова и фар , проклейку салона, замену масел . </p>
+    <hr class="style-one">
+  </div>
+</section>
+
+<section class="pluses">
+  <div class="container">
+    <h3 class="text-uppercase text-center">Наши преимущества</h3>
+    <div class="row padding-top-40">
+      <div class="col-md-6">
+        <div class="box-icon box-icon-side box-icon-round">
+          <img src="http://vs-group.ru/files/img/pl1.png" alt="" class="pull-left">
+          <div class="meta-title">Высокая эффективность</div>
+          <hr class="style-three">
+          <p>мы предлагаем разработку эффективной рекламной кампании, которая принесет реальный результат.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="box-icon box-icon-side box-icon-round">
+          <img src="http://vs-group.ru/files/img/pl2.png" alt="" class="pull-left">
+          <div class="meta-title">Комплексный подход</div>
+          <hr class="style-three">
+          <p>наша компания обладает различными материально-техническими возможностями для проведения работ по широкому спектру.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row padding-top-40">
+      <div class="col-md-6">
+        <div class="box-icon box-icon-side box-icon-round">
+          <img src="http://vs-group.ru/files/img/pl1.png" alt="" class="pull-left">
+          <div class="meta-title">Высокая эффективность</div>
+          <hr class="style-three">
+          <p>мы предлагаем разработку эффективной рекламной кампании, которая принесет реальный результат.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="box-icon box-icon-side box-icon-round">
+          <img src="http://vs-group.ru/files/img/pl2.png" alt="" class="pull-left">
+          <div class="meta-title">Комплексный подход</div>
+          <hr class="style-three">
+          <p>наша компания обладает различными материально-техническими возможностями для проведения работ по широкому спектру.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row padding-top-40">
+      <div class="col-md-6">
+        <div class="box-icon box-icon-side box-icon-round">
+          <img src="http://vs-group.ru/files/img/pl1.png" alt="" class="pull-left">
+          <div class="meta-title">Высокая эффективность</div>
+          <hr class="style-three">
+          <p>мы предлагаем разработку эффективной рекламной кампании, которая принесет реальный результат.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="box-icon box-icon-side box-icon-round">
+          <img src="http://vs-group.ru/files/img/pl2.png" alt="" class="pull-left">
+          <div class="meta-title">Комплексный подход</div>
+          <hr class="style-three">
+          <p>наша компания обладает различными материально-техническими возможностями для проведения работ по широкому спектру.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row padding-top-40">
+      <div class="col-md-6">
+        <div class="box-icon box-icon-side box-icon-round">
+          <img src="http://vs-group.ru/files/img/pl1.png" alt="" class="pull-left">
+          <div class="meta-title">Высокая эффективность</div>
+          <hr class="style-three">
+          <p>мы предлагаем разработку эффективной рекламной кампании, которая принесет реальный результат.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="box-icon box-icon-side box-icon-round">
+          <img src="http://vs-group.ru/files/img/pl2.png" alt="" class="pull-left">
+          <div class="meta-title">Комплексный подход</div>
+          <hr class="style-three">
+          <p>наша компания обладает различными материально-техническими возможностями для проведения работ по широкому спектру.</p>
+        </div>
+      </div>
+    </div>
+    <div class="text-center margin-top-80"><img src="assets/img/square.jpg" alt=""></div>
+  </div>
+</section>
+
+
+<section class="otz section-graybg nomargin">
+  <div class="container text-center">
+    <h2 class="text-uppercase">Отзывы наших клиентов</h2>
+    <div class="row margin-top-40">
+      <div class="col-sm-6">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <div class="icon-otz">
+              <span class="ico-status ico-status__online"></span>
+              <img src="http://gedeon-ekb.ru/assets/cache_image/uploads/5ebac7f4b91a6433ab62e701c0e9172d_75x75_199.jpg" alt="Кристина Смолина" class="img-circle" width="75" height="75">
+            </div>
+            <div class="otz-title">Ольга Светлицкая</div>
+            <p class="text-justify">Делали капитальный ремонт в трехкомнатной квартире, долго думали, какой потолок выбрать – натяжной или подвесной. В итоге решили устанавливать во всей квартире натяжные. Выбрали тканевые потолки в жилых комнатах и глянцевые...
+              <a href="otzyivyi.html" class="block pull-right" rel="nofollow">читать далее...</a></p>
+            </div>
+          </div>
+        </div><div class="col-sm-6">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <div class="icon-otz">
+                <span class="ico-status ico-status__online"></span>
+                <img src="http://gedeon-ekb.ru/assets/cache_image/images/34u8tgjuado8fasd9fq34iufa_75x75_199.jpg" alt="Александр Киселев" class="img-circle" width="75" height="75">
+              </div>
+              <div class="otz-title">Александр Киселев</div>
+              <p class="text-justify">Когда задумали с женой сделать натяжной потолок в зале, - долго выбирали компанию, которая выполнит монтажные работы. Наткнулись на сайт компании «Гедеон» и решили вызвать замерщика. После оценки наших предпочтений...
+                <a href="otzyivyi.html" class="block pull-right" rel="nofollow">читать далее...</a></p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <div class="icon-otz">
+                  <span class="ico-status ico-status__online"></span>
+                  <img src="http://gedeon-ekb.ru/assets/cache_image/images/kahsdufvhzxcv87hwiuvhvaz_75x75_199.jpg" alt="Евгений Бажаев" class="img-circle" width="75" height="75">
+                </div>
+                <div class="otz-title">Евгений Бажаев</div>
+                <p class="text-justify">Очень порадовал сервис и качество. Воспитанный замерщик, грамотные монтажники, никакого мусора и порчи имущества и самое главное отличное качество. Всем доволен, особенно светильники получились именно так,...
+                  <a href="otzyivyi.html" class="block pull-right" rel="nofollow">читать далее...</a></p>
+                </div>
+              </div>
+            </div><div class="col-sm-6">
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <div class="icon-otz">
+                    <span class="ico-status ico-status__online"></span>
+                    <img src="http://gedeon-ekb.ru/assets/cache_image/images/zvxhizsd7heg94hgvzkvjhzi7xv_75x75_199.jpg" alt="Анастасия Ватутина" class="img-circle" width="75" height="75">
+                  </div>
+                  <div class="otz-title">Анастасия Ватутина</div>
+                  <p class="text-justify">В компании Гедеон заказывали двухуровневый потолок для потолка не стандартной формы в квартиру студию. Очень переживали, что монтажники сделают все не так, как нам хотелось. Однако монтажная бригада выполнила...
+                    <a href="otzyivyi.html" class="block pull-right" rel="nofollow">читать далее...</a></p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+
+<div class="map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1f529de6c0149068cbc3660e300a725570ead2476d8bebdf92c62c91d5910a91&amp;width=100%25&amp;height=450&amp;lang=ru_RU&amp;scroll=true"></script>
+</div>
+<footer>
+<div class="container">
+  <div class="row">
+    <div class="col-md-2">
+<ul>
+  <li><a href="">О нас</a></li>
+  <li><a href="">Контакты</a></li>
+  <li><a href="">Прайс-лист</a></li>
+  <li><a href="">Услуги</a></li>
+  <li><a href="">Наши работы</a></li>
+  <li><a href="">Отзывы</a></li>
+</ul>
+    </div>
+    <div class="col-md-3 padding-left-30">
+<ul>
+  <li><a href="">Кузовной ремонт</a></li>
+  <li><a href="">Ремонт бампера</a></li>
+  <li><a href="">Ремонт двигателя</a></li>
+  <li><a href="">Ремонт КПП</a></li>
+  <li><a href="">Автопокраска</a></li>
+  <li><a href="">Замена жидкостей</a></li>
+</ul>
+    </div>
+    <div class="col-md-3 nopadding-left">
+<ul>
+  <li><a href="">Полировка кузова</a></li>
+  <li><a href="">Компьютерная диагностика</a></li>
+  <li><a href="">Слесарные работы</a></li>
+  <li><a href="">Комната отдыха</a></li>
+  <li><a href="">Удаление царапин</a></li>
+  <li><a href="">Удаление вмятин</a></li>
+</ul>
+
+
+
+
+
+
+    </div>
+    <div class="col-md-3 col-md-offset-1">
+<p class="meta-desc">Ежедневно с 9-00 до 20-00 ч.</p>
+      <div class="phone">+7 (343) 206-98-88</div>
+      <div class="phone">+7 (992) 012-88-00</div>
+<p class="meta-desc">г.Екатеринбург ул. Лукиных, стр. 1Б корпус 2</p>
+      <div class="mail"><a href="mailto:um-auto@e1.ru">um-auto@e1.ru</a></div>
+    </div>
+  </div>
+</div>
+
+<div class="copy text-center">
+  © 2018 UM-AVTO.RU | Все права защищены.<br>
+Размещенная на сайте информация не является Публичной Офертой.
+</div>
+</footer>
+
+</body>
+</html>

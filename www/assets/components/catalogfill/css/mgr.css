@@ -1,0 +1,20 @@
+
+/*.shk-panel-home-div {min-height:300px;}*/
+
+
+.download-icn {background: url(../img/download.png) 0 0 no-repeat; padding-left:18px;}
+
+#modAB {
+    background: none repeat scroll 0 0 rgba(230, 230, 230, 0.7);
+    border: 0 none;
+    border-radius: 0 0 5px 5px;
+    left: auto;
+    padding: 10px;
+    position: fixed;
+    right: 45px;
+    top: 55px;
+    z-index: 11;
+}
+
+.x-form-composite .x-box-inner { overflow: visible; left: 1px; }
+
